@@ -1,4 +1,4 @@
-const AnaliseDeDados = require('./analiseDeDados');
+const AnaliseDeDados = require('../src/analiseDeDados');
 
 describe('Análise Estatística de Dados', () => {
   let analise;
