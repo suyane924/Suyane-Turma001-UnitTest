@@ -77,10 +77,6 @@ describe('Análise Estatística de Dados', () => {
     expect(analise.calcularCoeficienteVariacao()).toBeCloseTo(28.167, 3);
   });
 
-  test('calcular o coeficiente de variação corretamente', () => {
-    expect(analise.calcularCoeficienteVariacao()).toBeCloseTo(28.167, 3)
-  });
-
   test('remover outliers corretamente', () => {
     analise.adicionarDados([50]);
     analise.removerOutliers();
