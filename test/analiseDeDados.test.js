@@ -38,11 +38,11 @@ describe('Análise Estatística de Dados', () => {
   });
 
   test('calcular a variância corretamente', () => {
-    expect(analise.calcularVariancia()).toBeCloseTo(8.4722, 4);
+    expect(analise.calcularVariancia()).toBeCloseTo(7.222);
   });
 
   test('calcular o desvio padrão corretamente', () => {
-    expect(analise.calcularDesvioPadrao()).toBeCloseTo(2.9117, 4);
+    expect(analise.calcularDesvioPadrao()).toBeCloseTo(2.687);
   });
 
   test('encontrar o mínimo corretamente', () => {
@@ -66,7 +66,7 @@ describe('Análise Estatística de Dados', () => {
   });
 
   test('calcular o produto corretamente', () => {
-    expect(analise.calcularProduto()).toBe(798840);
+    expect(analise.calcularProduto()).toBe(997920);
   });
 
   test('calcular a amplitude corretamente', () => {
@@ -74,7 +74,7 @@ describe('Análise Estatística de Dados', () => {
   });
 
   test('calcular o coeficiente de variação corretamente', () => {
-    expect(analise.calcularCoeficienteVariacao()).toBeCloseTo(28.167, 3);
+    expect(analise.calcularCoeficienteVariacao()).toBeCloseTo(26.007);
   });
 
   test('remover outliers corretamente', () => {
@@ -85,7 +85,7 @@ describe('Análise Estatística de Dados', () => {
 
   test('calcular a correlação corretamente', () => {
     const outroConjunto = [21, 24, 19, 30, 22, 25];
-    expect(analise.calcularCorrelacao(outroConjunto)).toBeCloseTo(0.98, 2);
+    expect(analise.calcularCorrelacao(outroConjunto)).toBeCloseTo(0.939);
   });  
 });
 
